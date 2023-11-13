@@ -1,0 +1,115 @@
+.navbar-brand {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    @media (max-width:767px) {
+        height: 45px;
+    }
+}
+
+.navbar-brand:hover svg g path:first-child,
+#main-header .navbar-brand:hover svg g path:nth-child(2) {
+    fill: #ff5b35
+}
+
+.navbar-brand:hover svg g path:nth-child(3) {
+    fill: #000
+}
+
+.download-btn {
+    background: $color-6;
+    color: $color-white !important;
+    border-radius: 8px;
+    margin-right: 25px !important;
+    padding: 7px 40px !important;
+    display: flex;
+    align-items: center;
+}
+
+.download-btn:hover {
+    color: #fff !important;
+    transform: scale(.98) !important;
+}
+
+.nav-link {
+    margin-right: 5px;
+}
+
+.nav-link:hover {
+    color: $color-6;
+}
+
+.navbar-toggler {
+    color: $color-1;
+    border: 0;
+    position: relative;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    .menu {
+        transition: transform .3s;
+        height: 24px;
+        width: 24px;
+
+        &-line {
+            background-color: $color-1;
+            display: block;
+            height: 2px;
+            width: 24px;
+            position: absolute;
+            transition: all .25s .25s;
+            transform-origin: right;
+        }
+
+        &-line-1 {
+            top: 4px;
+        }
+
+        &-line-2 {
+            top: 11px;
+        }
+
+        &-line-3 {
+            top: 19px;
+        }
+    }
+}
+
+.checkbox:checked~.navbar-toggler .menu .menu-line-1 {
+    transform: rotateZ(-40deg);
+}
+
+.checkbox:checked~.navbar-toggler .menu .menu-line-3 {
+    transform: rotateZ(40deg);
+}
+
+.checkbox:checked~.navbar-toggler .menu .menu-line-2 {
+    opacity: 0;
+}
+
+.navbar-nav {
+
+    @media (max-width:767px) {
+        background-color: $color-white;
+        box-shadow: 0 10px 27px rgba(0,0,0,.05);
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+
+.AllBtn {
+    
+}

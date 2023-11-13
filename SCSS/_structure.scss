@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'dana';
+    src: url(../font/dana-fanum-medium.woff2) format('woff');
+}
+
+@font-face {
+    font-family: 'iranyekan';
+    src: url(../font/iranyekanwebregular.woff2) format('woff');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(../font/robotoregular.woff2) format('woff');
+}
+
+$color-black : #000;
+$color-1 : #101010;
+$color-2 : #141414;
+$color-3 : #333;
+$color-4 : #4d4d4d;
+$color-5 : #545454;
+$color-6 : #ff5722;
+$color-7 : #5e5e5e;
+$color-8 : #0065dc;
+$color-9 : #9b9b9b;
+$color-10 : #acacac;
+$color-11 : #ddd;
+$color-12 : #f8f8f8;
+$color-white : #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: dana,iranyekan,roboto,Arial!important;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+}
+
+.table {
+    margin-bottom: 0;
+    border: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
